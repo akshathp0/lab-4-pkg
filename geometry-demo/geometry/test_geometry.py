@@ -1,5 +1,6 @@
 import pytest
-from shapes import Square, Circle
+from .shapes import Square, Circle
+from .utils import area_stats
 
 def test_square_area():
     input_lengths = [1, 1.5, 5]
