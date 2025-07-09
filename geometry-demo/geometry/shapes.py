@@ -14,7 +14,7 @@ class Square(Shape):
         if not isinstance(side, (int, float)):
             raise TypeError("Side length must be integer or float.")
         if side < 0:
-            raise ValueError("Side length must be greater than 0.")
+            raise ValueError("Side length must be greater than or equal to 0.")
         
         self.side = side
 
@@ -28,9 +28,9 @@ class Circle(Shape):
         if not isinstance(radius, (int, float)):
             raise TypeError("Radius must be integer or float.")
         if radius < 0:
-            raise ValueError("Radius must be greater than 0.")
+            raise ValueError("Radius must be greater than or equal to 0.")
         
         self.radius = radius
 
     def area(self):
-        return math.pi * self.radius ** 2
+        return math.pi * (self.radius ** 2)

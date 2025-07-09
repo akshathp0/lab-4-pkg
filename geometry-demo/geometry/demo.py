@@ -1,5 +1,5 @@
-from geometry.shapes import Square, Circle
-from geometry.utils import area_stats
+from shapes import Square, Circle
+from utils import area_stats
 
 square1 = Square(5) # square with sidelength of 5
 
